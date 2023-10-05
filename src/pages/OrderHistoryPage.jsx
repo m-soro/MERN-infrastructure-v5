@@ -1,9 +1,15 @@
 import React from "react";
 import * as usersService from "../utilities/users-service";
 
-const handleCheckToken = (evt) => {
-  evt.preventDefault();
-  console.log(usersService.getTime());
+import { checkToken } from "../utilities/users-service";
+
+// const handleCheckToken = async (evt) => {
+//   evt.preventDefault();
+//   console.log(usersService.getTime());
+// };
+
+const handleCheckToken = async function () {
+  checkToken();
 };
 export default function OrderHistoryPage() {
   return (
