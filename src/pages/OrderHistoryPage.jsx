@@ -3,11 +3,6 @@ import * as usersService from "../utilities/users-service";
 
 import { checkToken } from "../utilities/users-service";
 
-// const handleCheckToken = async (evt) => {
-//   evt.preventDefault();
-//   console.log(usersService.getTime());
-// };
-
 const handleCheckToken = async function () {
   checkToken();
 };

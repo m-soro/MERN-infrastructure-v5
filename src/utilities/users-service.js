@@ -21,7 +21,7 @@ export function getToken() {
     localStorage.removeItem("token");
     return null;
   }
-  console.log("from user-service", token);
+  // console.log("coming from user-service", token);
   return token;
 }
 

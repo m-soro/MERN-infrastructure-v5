@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 mongoose.connect(process.env.DATABASE_URL);
 
 const db = mongoose.connection;
-console.log(db);
+// console.log(db);
 
 db.on("error", (err) => console.log(err.message + " is Mongod not running?"));
 db.on("open", () =>

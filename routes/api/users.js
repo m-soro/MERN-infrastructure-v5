@@ -6,6 +6,8 @@ const ensureLoggedIn = require("../../config/ensureLoggedIn");
 // POST /api/users
 router.post("/", usersCtrl.create);
 router.post("/login", usersCtrl.login);
+// router.route("/").post(usersCtrl.create);
+// router.route("/login").post(usersCtrl.login);
 
 // Insert ensureLoggedIn on all routes that need protecting
 router.get("/check-token", ensureLoggedIn, usersCtrl.checkToken);

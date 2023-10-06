@@ -16,6 +16,7 @@ export const sendRequest = async function (
   }
 
   if (token) {
+    // console.log("coming from users-api", token);
     // Ensure the headers object exists
     options.headers = options.headers || {};
     // Add token to an Authorization header

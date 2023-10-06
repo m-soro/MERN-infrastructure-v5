@@ -46,8 +46,8 @@ async function login(req, res) {
 
 function checkToken(req, res) {
   // req.user will always be there for you when a token is sent
-  console.log("req.user", req.user);
-  console.log(req.exp);
+  // console.log("req.user", req.user);
+  // console.log(req.exp);
   res.json(req.exp);
 }
 /**
